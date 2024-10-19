@@ -7,6 +7,7 @@ import Student from './Student'
 import Todo from './Todo'
 import Player from './Player'
 import Singer from './Singer'
+import Counter from './Counter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,8 @@ function App() {
       {players.map(player => <Player name={player}></Player>)}
 
       {singers.map(singer => <Singer singer={singer}></Singer>)}
+
+      <Counter></Counter>
 
     </>
   )

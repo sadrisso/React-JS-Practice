@@ -8,6 +8,8 @@ import Todo from './Todo'
 import Player from './Player'
 import Singer from './Singer'
 import Counter from './Counter'
+import User from './Users'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +37,7 @@ function App() {
       {singers.map(singer => <Singer singer={singer}></Singer>)}
 
       <Counter></Counter>
+      <User></User>
 
     </>
   )

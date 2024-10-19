@@ -5,9 +5,18 @@ import './App.css'
 import Home from './Home'
 import Student from './Student'
 import Todo from './Todo'
+import Player from './Player'
+import Singer from './Singer'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const players = ["tamim", 'sakib', 'imrul']
+  const singers = [
+    {name: "Mahfuzur", age: 67},
+    {name: "Eva", age: 33},
+    {name: "Prothom", age: 29}
+  ]
 
   return (
     <>
@@ -15,11 +24,15 @@ function App() {
       <Home name="Persent Home" road="01"></Home>
 
       <Student name="Rahim" grade="07" score="100"></Student>
-      <Student name="Karim" grade="08" score="98"></Student>
 
       <Todo task="Understands Core Concepts" isDone={true}></Todo>
       <Todo task="try JSX" isDone={false}></Todo>
       <Todo task="Learn React" isDone={true}></Todo>
+
+      {players.map(player => <Player name={player}></Player>)}
+
+      {singers.map(singer => <Singer singer={singer}></Singer>)}
+
     </>
   )
 }

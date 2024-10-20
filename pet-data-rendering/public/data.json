@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Bella",
+    "species": "Dog",
+    "breed": "Labrador Retriever",
+    "age": 3,
+    "adopted": false,
+    "image": "https://example.com/images/bella.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "species": "Cat",
+    "breed": "Siamese",
+    "age": 2,
+    "adopted": true,
+    "image": "https://example.com/images/max.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "species": "Dog",
+    "breed": "Poodle",
+    "age": 4,
+    "adopted": false,
+    "image": "https://example.com/images/charlie.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Lucy",
+    "species": "Cat",
+    "breed": "Bengal",
+    "age": 1,
+    "adopted": true,
+    "image": "https://example.com/images/lucy.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Rocky",
+    "species": "Dog",
+    "breed": "Bulldog",
+    "age": 5,
+    "adopted": false,
+    "image": "https://example.com/images/rocky.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Milo",
+    "species": "Rabbit",
+    "breed": "Dutch",
+    "age": 1,
+    "adopted": false,
+    "image": "https://example.com/images/milo.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Lola",
+    "species": "Dog",
+    "breed": "Beagle",
+    "age": 3,
+    "adopted": true,
+    "image": "https://example.com/images/lola.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Oscar",
+    "species": "Bird",
+    "breed": "Parrot",
+    "age": 2,
+    "adopted": false,
+    "image": "https://example.com/images/oscar.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Coco",
+    "species": "Dog",
+    "breed": "Pomeranian",
+    "age": 4,
+    "adopted": true,
+    "image": "https://example.com/images/coco.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Zoe",
+    "species": "Cat",
+    "breed": "Persian",
+    "age": 3,
+    "adopted": false,
+    "image": "https://example.com/images/zoe.jpg"
+  }
+]

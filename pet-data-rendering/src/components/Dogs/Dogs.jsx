@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Dog from "../Dog/Dog";
 import './Dogs.css'
+import { addToLS, getStoredCart } from "../../Utilities/localStorage";
 
 
 const Dogs = () =>
@@ -13,11 +14,19 @@ const Dogs = () =>
     {
         const newAdotion = [...adoptions, dog];
         setAdoptions(newAdotion);
+        addToLS(dog.id)
     }
 
     useEffect(() => {
         fetch('dogs.json').then(res => res.json()).then(data => setDogs(data));
     }, []);
+
+    useEffect(() => {
+        if (dogs.length > 0) {
+            const storedCart = getStoredCart();
+            console.log(storedCart);
+        }
+    }, [dogs]);
 
     console.log(dogs);
 

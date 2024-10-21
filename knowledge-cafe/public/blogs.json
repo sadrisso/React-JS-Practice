@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co.com/x5JT3hb/flat-lay-desktop-with-notebook-pizza.jpg",
+      "title": "The Dawn of AI",
+      "author": "Jane Doe",
+      "img": "https://i.ibb.co.com/10tLw8r/author-1.jpg",
+      "posted_date": "2024-10-20",
+      "reading_time": "5 min",
+      "hashtags": ["#AI", "#Future", "#Technology", "#Innovation"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co.com/nL4sS0t/flat-lay-workstation-with-copy-space-laptop.jpg",
+      "title": "Adventures in the Metaverse",
+      "author": "John Smith",
+      "img": "https://i.ibb.co.com/d5s9K65/author-2.jpg",
+      "posted_date": "2024-10-19",
+      "reading_time": "8 min",
+      "hashtags": ["#Metaverse", "#VirtualReality", "#Gaming", "#Future"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co.com/t2gcG3w/blog-cover-3.jpg",
+      "title": "Sustainable Living",
+      "author": "Alice Green",
+      "img": "https://i.ibb.co.com/2Yk8Pzm/author-3.jpg",
+      "posted_date": "2024-10-18",
+      "reading_time": "6 min",
+      "hashtags": ["#Sustainability", "#EcoFriendly", "#GreenLiving", "#ClimateChange"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co.com/nfbwx2t/blog-cover-4.jpg",
+      "title": "The Art of Minimalism",
+      "author": "Mark Johnson",
+      "img": "https://i.ibb.co.com/DkQztCc/author-4.jpg",
+      "posted_date": "2024-10-17",
+      "reading_time": "7 min",
+      "hashtags": ["#Minimalism", "#Lifestyle", "#Declutter", "#Simplicity"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co.com/xG8SKnS/blog-cover-5.jpg",
+      "title": "Cryptocurrency Explained",
+      "author": "Sara Lee",
+      "img": "https://i.ibb.co.com/DkQztCc/author-4.jpg",
+      "posted_date": "2024-10-16",
+      "reading_time": "10 min",
+      "hashtags": ["#Crypto", "#Blockchain", "#Bitcoin", "#Fintech"]
+    }
+  ]
+

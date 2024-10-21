@@ -1,0 +1,6 @@
+.dogs-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 12px;
+    margin-top: 22px;
+}

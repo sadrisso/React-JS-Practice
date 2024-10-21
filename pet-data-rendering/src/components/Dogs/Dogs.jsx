@@ -22,6 +22,7 @@ const Dogs = () =>
     }, []);
 
     useEffect(() => {
+        console.log("called the use effect", dogs.length)
         if (dogs.length > 0) {
             const storedCart = getStoredCart();
             console.log(storedCart);

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Blog from "../Blog/Blog";
 
 
-const Blogs = ({handleAddToBookmark}) =>
+const Blogs = ({handleAddToBookmark, handleReadingTime}) =>
 {
 
     const [blogs, setBlogs] = useState([]);
@@ -12,18 +12,18 @@ const Blogs = ({handleAddToBookmark}) =>
         fetch("../../../public/blogs.json").then(res => res.json()).then(data => setBlogs(data))
     }, [])
 
-    console.log(blogs)
 
     return (
         <div className="w-2/3">
             <h2 className="text-center text-2xl">Blogs</h2>
-            {blogs.map((blog) => <Blog key={blog.id} blog={blog} handleAddToBookmark={handleAddToBookmark}></Blog>)}
+            {blogs.map((blog, idx) => <Blog key={idx} blog={blog} handleAddToBookmark={handleAddToBookmark} handleReadingTime={handleReadingTime}></Blog>)}
         </div>
     );
 };
 
 Blogs.propTypes = {
     handleAddToBookmark: PropTypes.func.isRequired,
+    handleReadingTime: PropTypes.func
 }
 
 export default Blogs;

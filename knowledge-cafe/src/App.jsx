@@ -9,18 +9,23 @@ function App()
 {
 
   const [bookmarks, setBookmarks] = useState([]);
+  const [readingTime, setReadingTime] = useState(0);
 
   const handleAddToBookmark = blog => {
     const newBookmark = [...bookmarks, blog];
     setBookmarks(newBookmark)
   }
 
+  const handleReadingTime = (time) => {
+    setReadingTime(parseFloat(readingTime) + parseFloat(time))
+  }
+
   return (
     <>
       <Header></Header>
       <div className='md:flex mt-4'>
-        <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+        <Blogs handleAddToBookmark={handleAddToBookmark} handleReadingTime={handleReadingTime}></Blogs>
+        <Bookmarks bookmarks={bookmarks} readingTime={readingTime}></Bookmarks>
       </div>
     </>
   )

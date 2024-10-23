@@ -9,6 +9,16 @@ import Sidebar from "./components/Sidebar/Sidebar";
 const App = () => {
 
   const [recipeQueue, setRecipeQueue] = useState([]);
+  const [removedRecipe, setRemovedRecipe] = useState([]);
+
+  const handleRemove = (id) => {
+    const deletedRecipe = recipeQueue.find((recipe) => recipe.recipe_id === id);
+
+    const updateQueue = recipeQueue.filter((recipe) => recipe.recipe_id !== id);
+
+    setRemovedRecipe([...removedRecipe, deletedRecipe]);
+    setRecipeQueue(updateQueue)
+  }
 
   const handleRecipeQueue = (recipe) => {
     const existRecipeQueue = recipeQueue.find((existRecipe) => existRecipe.recipe_id === recipe.recipe_id);
@@ -29,7 +39,7 @@ const App = () => {
       <OurRecipes></OurRecipes>
       <section className="md:flex mt-10">
         <Recipies handleRecipeQueue={handleRecipeQueue}></Recipies>
-        <Sidebar recipeQueue={recipeQueue}></Sidebar>
+        <Sidebar recipeQueue={recipeQueue} handleRemove={handleRemove} removedRecipe={removedRecipe}></Sidebar>
       </section>
     </div>
   );

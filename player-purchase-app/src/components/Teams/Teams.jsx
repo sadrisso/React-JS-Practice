@@ -7,7 +7,7 @@ const Teams = () =>
     const [teams, setTeams] = useState([]);
 
     useEffect(() => {
-        fetch("player-details.json").then(res => res.json()).then(data => setTeams(data))
+        fetch("https://jsonplaceholder.typicode.com/albums/1/photos").then(res => res.json()).then(data => setTeams(data))
     }, []);
 
     console.log(teams);

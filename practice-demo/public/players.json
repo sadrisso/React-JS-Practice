@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "name": "Lionel Messi",
+      "age": 36,
+      "position": "Forward",
+      "team": "Inter Miami",
+      "nationality": "Argentina",
+      "goals": 804,
+      "assists": 350
+    },
+    {
+      "id": 2,
+      "name": "Cristiano Ronaldo",
+      "age": 39,
+      "position": "Forward",
+      "team": "Al-Nassr",
+      "nationality": "Portugal",
+      "goals": 850,
+      "assists": 223
+    },
+    {
+      "id": 3,
+      "name": "Kevin De Bruyne",
+      "age": 32,
+      "position": "Midfielder",
+      "team": "Manchester City",
+      "nationality": "Belgium",
+      "goals": 101,
+      "assists": 205
+    },
+    {
+      "id": 4,
+      "name": "Kylian Mbappé",
+      "age": 25,
+      "position": "Forward",
+      "team": "Paris Saint-Germain",
+      "nationality": "France",
+      "goals": 265,
+      "assists": 120
+    },
+    {
+      "id": 5,
+      "name": "Virgil van Dijk",
+      "age": 32,
+      "position": "Defender",
+      "team": "Liverpool",
+      "nationality": "Netherlands",
+      "goals": 35,
+      "assists": 12
+    },
+    {
+      "id": 6,
+      "name": "Erling Haaland",
+      "age": 24,
+      "position": "Forward",
+      "team": "Manchester City",
+      "nationality": "Norway",
+      "goals": 168,
+      "assists": 40
+    },
+    {
+      "id": 7,
+      "name": "Robert Lewandowski",
+      "age": 35,
+      "position": "Forward",
+      "team": "Barcelona",
+      "nationality": "Poland",
+      "goals": 613,
+      "assists": 142
+    },
+    {
+      "id": 8,
+      "name": "Mohamed Salah",
+      "age": 31,
+      "position": "Forward",
+      "team": "Liverpool",
+      "nationality": "Egypt",
+      "goals": 308,
+      "assists": 120
+    },
+    {
+      "id": 9,
+      "name": "Neymar Jr",
+      "age": 32,
+      "position": "Forward",
+      "team": "Al-Hilal",
+      "nationality": "Brazil",
+      "goals": 414,
+      "assists": 250
+    },
+    {
+      "id": 10,
+      "name": "Karim Benzema",
+      "age": 36,
+      "position": "Forward",
+      "team": "Al-Ittihad",
+      "nationality": "France",
+      "goals": 442,
+      "assists": 160
+    }
+]

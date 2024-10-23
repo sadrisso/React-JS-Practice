@@ -4,9 +4,11 @@ const Team = ({team}) =>
 {
     console.log(team)
 
+    const {thumbnailUrl} = team
+
     return (
         <div>
-            <h2>Name: {}</h2>
+            <h2>Name: {thumbnailUrl}</h2>
         </div>
     );
 };

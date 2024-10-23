@@ -5,7 +5,7 @@
       "recipe_name": "Spaghetti Carbonara",
       "short_desc": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
       "ingredients": ["Spaghetti", "Pancetta", "Eggs", "Parmesan Cheese", "Black Pepper"],
-      "preparing_time": "25 minutes",
+      "preparing_time": 25,
       "calories": 500
     },
     {
@@ -14,7 +14,7 @@
       "recipe_name": "Chicken Caesar Salad",
       "short_desc": "A refreshing salad with grilled chicken, romaine lettuce, croutons, and Caesar dressing.",
       "ingredients": ["Romaine Lettuce", "Grilled Chicken", "Croutons", "Parmesan Cheese", "Caesar Dressing"],
-      "preparing_time": "20 minutes",
+      "preparing_time": 20,
       "calories": 350
     },
     {
@@ -23,7 +23,7 @@
       "recipe_name": "Vegetable Stir-Fry",
       "short_desc": "A healthy and quick stir-fry made with mixed vegetables and soy sauce.",
       "ingredients": ["Broccoli", "Carrots", "Bell Peppers", "Snow Peas", "Soy Sauce"],
-      "preparing_time": "15 minutes",
+      "preparing_time": 15,
       "calories": 200
     },
     {
@@ -32,7 +32,7 @@
       "recipe_name": "Beef Tacos",
       "short_desc": "Delicious beef tacos served with lettuce, cheese, and salsa in a soft tortilla.",
       "ingredients": ["Ground Beef", "Tortillas", "Lettuce", "Cheddar Cheese", "Salsa"],
-      "preparing_time": "30 minutes",
+      "preparing_time": 30,
       "calories": 450
     },
     {
@@ -41,7 +41,7 @@
       "recipe_name": "Grilled Salmon",
       "short_desc": "A simple and tasty grilled salmon fillet with lemon and herbs.",
       "ingredients": ["Salmon Fillet", "Lemon", "Olive Oil", "Garlic", "Thyme"],
-      "preparing_time": "20 minutes",
+      "preparing_time": 20,
       "calories": 300
     },
     {
@@ -50,7 +50,7 @@
       "recipe_name": "Pancakes with Syrup",
       "short_desc": "Fluffy pancakes topped with butter and maple syrup.",
       "ingredients": ["Flour", "Milk", "Eggs", "Butter", "Maple Syrup"],
-      "preparing_time": "15 minutes",
+      "preparing_time": 15,
       "calories": 400
     }
   ]

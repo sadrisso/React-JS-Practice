@@ -1,19 +1,18 @@
 import PropTypes from "prop-types"
 
 
-const Recipe = ({recipe}) => {
+const Recipe = ({recipe, handleRecipeQueue}) => {
 
-    console.log(recipe)
 
     const {recipe_img, recipe_name, short_desc, ingredients, preparing_time, calories} = recipe
 
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl">
-                <figure>
-                    <img className="w-full h-[200px]" src={recipe_img} alt={recipe_name} />
+            <div className="card bg-base-100 border">
+                <figure className="p-5">
+                    <img className="w-full h-[200px] rounded-xl" src={recipe_img} alt={recipe_name} />
                 </figure>
-                <div className="card-body space-y-4">
+                <div className="card-body space-y-1">
                     <h2 className="card-title text-xl font-bold">{recipe_name}</h2>
                     <p>{short_desc}</p>
 
@@ -28,9 +27,9 @@ const Recipe = ({recipe}) => {
                         <p><i className="fa-regular fa-clock mr-2"></i>{preparing_time}</p>
                         <p><i className="fa-solid fa-dumbbell mr-2"></i>{calories}</p>
                     </div>
-                    
+
                     <div className="card-actions mt-6">
-                        <button className="btn bg-[#0BE58A] rounded-2xl">Want To Cook</button>
+                        <button className="btn bg-[#0BE58A] rounded-2xl" onClick={() => handleRecipeQueue(recipe)}>Want To Cook</button>
                     </div>
                 </div>
             </div>
@@ -39,7 +38,8 @@ const Recipe = ({recipe}) => {
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.object
+    recipe: PropTypes.object,
+    handleRecipeQueue: PropTypes.func,
 }
 
 export default Recipe;

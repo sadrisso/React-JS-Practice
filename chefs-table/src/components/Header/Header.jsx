@@ -4,12 +4,12 @@ const Header = () =>
 
 
     return (
-        <div className="flex flex-col md:flex-row md:justify-between items-center space-y-5 md:space-y-0">
+        <div className="flex flex-col md:flex-row md:justify-between items-center space-y-5 md:space-y-0 mb-10 font-[Lexend]">
             <div>
-                <h1 className="font-mono text-3xl">Recipe Calories</h1>
+                <h1 className="text-3xl">Recipe Calories</h1>
             </div>
             <div>
-                <ul className="flex gap-5 items-center text-xl font-sans" >
+                <ul className="flex gap-5 items-center text-xl" >
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Recipe</a></li>

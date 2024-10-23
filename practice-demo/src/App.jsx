@@ -11,13 +11,15 @@ function App() {
 
   const [players, setPlayers] = useState([]);
 
+
   const handleAddPlayers = player => {
     const newPlayers = [...players, player];
     setPlayers(newPlayers);
   }
 
   const handleRemovePlayer = (id) => {
-    console.log("removing", id)
+    const remainingPlayers = players.filter((player) => player.id !== id);
+    setPlayers(remainingPlayers);
   }
 
 

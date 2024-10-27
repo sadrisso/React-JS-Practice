@@ -11,16 +11,17 @@ const App = () => {
   const [recipeQueue, setRecipeQueue] = useState([]);
   const [removedRecipe, setRemovedRecipe] = useState([]);
 
-  const handleRemove = (id) => {
+  const handleRemove = (id) =>
+  {
     const deletedRecipe = recipeQueue.find((recipe) => recipe.recipe_id === id);
-
     const updateQueue = recipeQueue.filter((recipe) => recipe.recipe_id !== id);
 
     setRemovedRecipe([...removedRecipe, deletedRecipe]);
     setRecipeQueue(updateQueue)
   }
 
-  const handleRecipeQueue = (recipe) => {
+  const handleRecipeQueue = (recipe) =>
+  {
     const existRecipeQueue = recipeQueue.find((existRecipe) => existRecipe.recipe_id === recipe.recipe_id);
 
     if(!existRecipeQueue) {

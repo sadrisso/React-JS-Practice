@@ -9,6 +9,7 @@ const Header = () => {
                 <Link to="/about" className="mr-6 cursor-pointer bg-gray-400 p-2 rounded-xl">About</Link>
                 <Link to="/contact" className="mr-6 cursor-pointer bg-gray-400 p-2 rounded-xl">Contact</Link>
                 <Link to="/users" className="mr-6 cursor-pointer bg-gray-400 p-2 rounded-xl">Users</Link>
+                <Link to="/posts" className="mr-6 cursor-pointer bg-gray-400 p-2 rounded-xl">Posts</Link>
             </nav>
         </div>
     );

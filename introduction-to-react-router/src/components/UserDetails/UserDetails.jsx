@@ -15,9 +15,9 @@ const UserDetails = () =>
 
     return (
         <div className="border border-teal-600 rounded-xl p-4 w-1/3 mx-auto mt-10">
-            <h2>User Name: {name}</h2>
+            <h2 className="text-2xl font-bold">User Name: {name}</h2>
             <p>User Email: {email}</p>
-            <button className="btn mt-3" onClick={handleGoBack}>Go Back</button>
+            <button className="btn btn-success mt-3" onClick={handleGoBack}>Go Back</button>
         </div>
     );
 };

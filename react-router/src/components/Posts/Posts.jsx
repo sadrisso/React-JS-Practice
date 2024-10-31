@@ -5,8 +5,6 @@ const Posts = () => {
 
     const posts = useLoaderData();
 
-    console.log(posts)
-
     return (
         <div>
             <h1 className="text-5xl">Posts: {posts.length}</h1>

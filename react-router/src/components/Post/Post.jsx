@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
 
 
@@ -12,6 +12,11 @@ const Post = ({post}) => {
         navigate(`/posts/${id}`)
     }
 
+    const handleGoBack = () => {
+        navigate(-1)
+    }
+
+
     return (
         <div>
             <div className="border border-green-900 p-5 m-5">
@@ -21,6 +26,7 @@ const Post = ({post}) => {
                 <p>{body}</p>
                 {/* <Link to={`/posts/${id}`}><button className="btn">See details</button></Link> */}
                 <button onClick={handleClick}>See Details</button>
+                <button onClick={handleGoBack}>Go back</button>
             </div>
         </div>
     );

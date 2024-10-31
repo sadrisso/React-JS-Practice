@@ -93,6 +93,8 @@ const LineChart = () => {
                     <Radar dataKey="Chemistry"></Radar>
                 </RadarChart>
             </ResponsiveContainer>
+
+
         </div>
     );
 };

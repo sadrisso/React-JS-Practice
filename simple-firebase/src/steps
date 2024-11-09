@@ -1,0 +1,7 @@
+first install firebase - npm install firebase
+create a project on the console.firebase.google.com
+register project
+get firebase config and do not save on the client side
+create auth where it will be added
+export auth from the init file
+in the console authentication > started > enable google provider

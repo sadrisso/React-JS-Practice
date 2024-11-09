@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/" className="btn btn-primary">Home</NavLink>
+            <NavLink to="/login" className="btn btn-primary">Login</NavLink>
         </div>
     );
 };

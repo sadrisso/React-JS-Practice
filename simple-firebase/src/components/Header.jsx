@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div>
-            <NavLink to="/" className="btn btn-primary">Home</NavLink>
-            <NavLink to="/login" className="btn btn-primary">Login</NavLink>
+        <div className="container mx-auto text-center flex gap-5 justify-center">
+            <NavLink to="/" className="text-xl font-bold font-mono mt-5 ">Home</NavLink>
+            <NavLink to="/login" className="text-xl font-bold font-mono mt-5 ">Login</NavLink>
         </div>
     );
 };

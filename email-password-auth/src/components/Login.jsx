@@ -22,13 +22,14 @@ const Login = () => {
 
 
         signInWithEmailAndPassword(auth, email, password)
-        .then(res => {
-            setLogin(true)
-        })
-        .catch(err => {
-            console.log(err)
-            setLoginError(err.message)
-        })
+            .then(res => {
+                console.log(res)
+                setLogin(true)
+            })
+            .catch(err => {
+                console.log(err)
+                setLoginError(err.message)
+            })
     }
 
     return (

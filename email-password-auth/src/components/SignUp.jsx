@@ -1,6 +1,6 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../firebase.init";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -10,6 +10,7 @@ const SignUp = () => {
     const [errorMessage, setErrorMessage] = useState("");
     const [success, setSuccess] = useState(false);
     const [showPassword, setShowPassword] = useState(false)
+    const emailRef = useRef();
 
     const handleSignUp = (e) => {
         e.preventDefault();
@@ -41,12 +42,30 @@ const SignUp = () => {
             .then(res => {
                 console.log(res.user)
                 setSuccess(true)
+
+                sendEmailVerification(auth.currentUser)
+                    .then(() => { console.log("varification email sent") })
             })
             .catch(err => {
                 console.log(err.message)
                 setErrorMessage(err.message)
                 setSuccess(flase)
             })
+    }
+
+    const handleForgetPass = () => {
+        console.log("get me a email password", emailRef.current.value)
+        const email = emailRef.current.value;
+
+        if(!email) {
+            console.log("Please provide a valide email")
+        }
+        else {
+            sendPasswordResetEmail(auth, email)
+                .then(() => {console.log("password reset email sent please check your email")
+                    alert("password reset email sent please check your email")
+                })
+        }
     }
 
     return (
@@ -59,6 +78,7 @@ const SignUp = () => {
                         <span className="label-text">Email</span>
                     </label>
                     <input
+                        ref={emailRef}
                         type="email"
                         placeholder="email"
                         name="email"
@@ -86,7 +106,7 @@ const SignUp = () => {
                     </div>
 
                     {/* forget pass */}
-                    <label className="label">
+                    <label onClick={handleForgetPass} className="label">
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>
                 </div>

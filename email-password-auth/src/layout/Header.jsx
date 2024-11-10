@@ -8,7 +8,7 @@ const Header = () => {
     const links = <>
         <div className="flex gap-5">
             <NavLink to="login">Login</NavLink>
-            <NavLink to="register">Register</NavLink>
+            <NavLink to="signup">SignUp</NavLink>
             <NavLink to="/">Home</NavLink>
         </div>
     </>

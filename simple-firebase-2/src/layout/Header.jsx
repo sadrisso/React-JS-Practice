@@ -10,8 +10,8 @@ const Header = () => {
 
     const handleSignOutUser = () => {
         signOutUser()
-        .then(() => {console.log("User signed out")})
-        .catch((err) => console.log(err.message))
+            .then(() => { console.log("User signed out") })
+            .catch((err) => console.log(err.message))
     }
 
     return (
@@ -20,12 +20,16 @@ const Header = () => {
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/login">Login</NavLink>
                 <NavLink to="/register">Register</NavLink>
+                {
+                    user && <NavLink to="/orders">Orders</NavLink>
+                }
             </div>
             <div>
-                {user ? <div className="flex gap-2 items-center">
-                    <p>{user.email}</p>
-                    <button onClick={handleSignOutUser} className="btn btn-error">Sign Out</button>
-                </div>
+                {user ?
+                    <div className="flex gap-2 items-center">
+                        <p>{user.email}</p>
+                        <button onClick={handleSignOutUser} className="btn btn-error">Sign Out</button>
+                    </div>
                     :
                     <Link to="/login"><button className="btn btn-success">Login</button></Link>
                 }

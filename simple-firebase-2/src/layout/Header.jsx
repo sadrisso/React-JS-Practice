@@ -21,7 +21,11 @@ const Header = () => {
                 <NavLink to="/login">Login</NavLink>
                 <NavLink to="/register">Register</NavLink>
                 {
-                    user && <NavLink to="/orders">Orders</NavLink>
+                    user &&
+                    <div>
+                        <NavLink to="/orders" className="mr-5">Orders</NavLink>
+                        <NavLink to="/profile">Profile</NavLink>
+                    </div>
                 }
             </div>
             <div>

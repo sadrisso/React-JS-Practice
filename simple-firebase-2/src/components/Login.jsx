@@ -1,11 +1,12 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 
 const Login = () => {
 
-    const {signInUser} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const { signInUser, signInWithGithub, signInWithGoogle } = useContext(AuthContext);
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -14,9 +15,30 @@ const Login = () => {
 
         console.log(email, password)
 
+        // user sign in
         signInUser(email, password)
-        .then((res) => {console.log(res)})
-        .catch((err) => console.log("Error: ", err))
+            .then((res) => {
+                console.log(res)
+                e.target.reset();
+                navigate('/')
+            })
+            .catch((err) => console.log("Error: ", err))
+    }
+
+    const handleGithubSignIn = () => {
+        signInWithGithub()
+            .then((res) => {
+                console.log(res)
+            })
+            .catch((err) => console.log(err.message))
+    }
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then((res) => {
+                console.log(res)
+            })
+            .catch((err) => console.log("ERR: ", err.message))
     }
 
     return (
@@ -53,7 +75,11 @@ const Login = () => {
                     <button className="btn btn-primary">Login</button>
                 </div>
             </form>
-            <p>New to this website? <Link to="/register">Register</Link></p>
+            <p className="text-center mb-5">New to this website? <Link to="/register">Register</Link></p>
+            <div className="text-center m-4">
+                <button onClick={handleGithubSignIn} className="btn btn-ghost">Sign In With Github</button>
+                <button onClick={handleGoogleSignIn} className="btn btn-ghost">Sign In With Google</button>
+            </div>
         </div>
 
     );

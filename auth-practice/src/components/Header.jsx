@@ -1,7 +1,17 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "./AuthProvider";
 
 
 const Header = () => {
+
+    const {signOutUser} = useContext(AuthContext);
+
+    const handleSignOut = () => {
+        signOutUser()
+        .then(() => console.log("Sign out"))
+        .catch((err) => console.log(err))
+    }
 
     const links = <>
         <div className="flex gap-5 justify-center items-center font-mono text-xl ">
@@ -52,7 +62,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-accent text-xl">Button</a>
+                <a className="btn btn-accent text-xl" onClick={handleSignOut}>Sign Out</a>
             </div>
         </div>
     );
